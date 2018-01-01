@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Document</title>
+	<script>
+window.onclick = function(){
+
+
+	var spa1 = document.querySelector('a:nth-child(1)');
+	var spa2 = document.querySelector('a:nth-child(2)');
+	spa1.onclick = function(){
+		this.style.color = 'red';
+		spa2.style.color = 'blue';
+	}
+	spa2.onclick = function(){
+		this.style.color = 'red';
+		spa1.style.color = 'blue';
+	}
+}
+</script>
+</head>
+<body>
+	<a>span1</a>
+	<a>span2</a>
+</body>
+</html>
